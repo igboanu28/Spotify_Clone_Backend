@@ -1,0 +1,16 @@
+@hostname = http://localhost:3000
+
+### Get all songs
+get {{hostname}}/songs
+
+### get a song
+get {{hostname}}/songs/1
+
+### create a new song
+post {{hostname}}/songs
+
+### update a song
+PUT {{hostname}}/songs/1
+
+### delete a song
+delete {{hostname}}/songs/1
