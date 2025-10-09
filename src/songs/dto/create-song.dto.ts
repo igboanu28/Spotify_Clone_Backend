@@ -5,7 +5,7 @@ export class CreateSongDTO {
   @IsNotEmpty()
   readonly title: string;
 
-  @IsString()
+  @IsString({ each: true })
   @IsArray()
   @IsNotEmpty()
   readonly artists: string[];
@@ -16,5 +16,6 @@ export class CreateSongDTO {
 
   @IsMilitaryTime()
   @IsNotEmpty()
+  @IsString()
   readonly duration: Date;
 }

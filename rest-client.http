@@ -11,7 +11,10 @@ post {{hostname}}/songs
 Content-Type: application/json
 
 {
-    "me": "ew"
+    "title": "Lose",
+    "artists": ["Otami"],
+    "releaseDate": "2022-12-08",
+    "duration": "03:16"
 }
 
 ### update a song
